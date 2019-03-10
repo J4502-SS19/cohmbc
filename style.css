@@ -21,12 +21,29 @@ h1 {
 #nav {
     padding: 0;
 	  list-style-type: none;
+		display: flex;
+		height: 40px;
+		justify-content: space-around;
+		align-items: center;
+		background-color: #98bf21;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+@media (min-width: 800px){
+	.container {
+		flex-direction: column;
+		justify-content: center
+	}
 }
 
 #nav li {
     margin: 0;
     padding: 0;
-	  border-bottom: 1px solid #ccc;
+		font-size: 1em
 }
 
 #nav a:link, #nav a:visited {
