@@ -118,6 +118,7 @@ img {
 
 @media screen and (min-width: 1000px) {
   article {
+		max-width: 80%;
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
     grid-gap: 30px;
