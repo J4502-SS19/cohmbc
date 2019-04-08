@@ -7,6 +7,7 @@
 p {
 	color: #666666;
     font-family: Helvetica, Arial, sans-serif;
+		font-size: 20px;
 }
 
 h1 {
@@ -80,4 +81,67 @@ h1 {
 
 img {
 	border: none;
+}
+@media screen and (min-width: 600px) {
+  #container {
+    width: 80%;
+  }
+  .authorbox img {
+    display: block;
+    width: 100%;
+    margin-top: 0.5em;
+  }
+  .authorbox {
+    width: 25%;
+    max-width: 200px;
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .item1 {
+    margin-right: auto;
+  }
+  nav ul li {
+    margin: 5px;
+  }
+  .pullquote {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-areas:
+        "a b b"
+        "c c e"
+        ". d d";
+  }
+
+  .authorbox {
+    width: 100%;
+    grid-area: a;
+  }
+
+  .section1 {
+    grid-area: b;
+  }
+
+  .image {
+    grid-area: c;
+  }
+
+  .section2 {
+    grid-area: d;
+  }
+
+  .pullquote {
+    margin-top: 0;
+		font-size: 36px;
+    grid-area: e;
+  }
 }
