@@ -93,7 +93,6 @@ img {
   }
   .authorbox {
     width: 25%;
-    max-width: 200px;
     float: left;
     margin-right: 20px;
   }
@@ -109,6 +108,12 @@ img {
   .pullquote {
     display: block;
   }
+}
+
+@media screen and (max-width:600px) {
+	.authorbox img{
+		width: 50%;
+	}
 }
 
 @media screen and (min-width: 1000px) {
@@ -132,7 +137,8 @@ img {
   }
 
   .image {
-    grid-area: c;
+		width: 100%;
+    grid-area: e;
   }
 
   .section2 {
@@ -142,6 +148,6 @@ img {
   .pullquote {
     margin-top: 0;
 		font-size: 36px;
-    grid-area: e;
+    grid-area: c;
   }
 }
